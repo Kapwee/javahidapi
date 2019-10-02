@@ -9,6 +9,7 @@ import java.io.OutputStream;
 public class ClassPathLibraryLoader {
 
     private static final String[] HID_LIB_NAMES = {
+    		"/tmp/hidapilibs/libhidapi-jni.so",
 	        "/tmp/hidapilibs/linux/libhidapi-jni-64.so",
 	        "/tmp/hidapilibs/linux/libhidapi-jni-32.so",
 	        "/tmp/hidapilibs/mac/libhidapi-jni-64.jnilib",
