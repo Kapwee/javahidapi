@@ -21,6 +21,20 @@
       <developerConnection>scm:hg:https://code.google.com/p/javahidapi</developerConnection>
       <url>http://code.google.com/p/javahidapi</url>
    </scm>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
    <developers>
     <developer>
       <id>lord</id>

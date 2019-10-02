@@ -29,6 +29,7 @@ public class ClassPathLibraryLoader {
 		                if (in != null) {
 		                	try {
 				                // always write to different location
+								System.out.println("write file "+ path);
 				                String tempName = path.substring(path.lastIndexOf('/') + 1);
 				                File fileOut = File.createTempFile(tempName.substring(0, tempName.lastIndexOf('.')), tempName.substring(tempName.lastIndexOf('.'), tempName.length()));
 				                //fileOut.deleteOnExit();
@@ -49,8 +50,12 @@ public class ClassPathLibraryLoader {
 		                }	                
 		        } catch (Exception e) {
 		        	  // ignore
+					System.out.println("exception e");
+					System.out.println(e.toString());
 		        } catch (UnsatisfiedLinkError e) {
 		        	  // ignore
+					System.out.println("UnsatisfiedLinkError e");
+					System.out.println(e.toString());
 		        }
 		        
 		        if (isHIDLibLoaded) {
