@@ -31,7 +31,7 @@ public class ClassPathLibraryLoader {
 				                // always write to different location
 				                String tempName = path.substring(path.lastIndexOf('/') + 1);
 				                File fileOut = File.createTempFile(tempName.substring(0, tempName.lastIndexOf('.')), tempName.substring(tempName.lastIndexOf('.'), tempName.length()));
-				                fileOut.deleteOnExit();
+				                //fileOut.deleteOnExit();
 				                
 				                OutputStream out = new FileOutputStream(fileOut);
 				                byte[] buf = new byte[1024];
