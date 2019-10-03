@@ -119,12 +119,12 @@
         </fileset>
       </javadoc>
       
-      <jar jarfile="${dist}/lib/${artifactId}-${version}-javadoc.jar">
+      <jar jarfile="${dist}/${artifactId}-${version}-javadoc.jar">
           <fileset dir="${dist}/javadoc" />
       </jar>
       
       <!-- build the main artifact -->
-      <jar destfile="${dist}/lib/${artifactId}-${version}.jar"
+      <jar destfile="${dist}/${artifactId}-${version}.jar"
            basedir="${build}"
            includes="com/codeminders/hidapi/**"
            excludes="**/HIDAPITest.class"
@@ -134,7 +134,7 @@
 	   </fileset>  
       </jar>
       <!-- build the sources artifact -->
-      <jar destfile="${dist}/lib/${artifactId}-${version}-sources.jar">
+      <jar destfile="${dist}/${artifactId}-${version}-sources.jar">
           <fileset dir="src" includes="**/*.java"/>
       </jar>
     </target>
